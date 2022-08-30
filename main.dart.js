@@ -42690,13 +42690,15 @@ _.d=d},
 a3z:function a3z(a){this.a=a},
 Bp:function Bp(a){this.a=a},
 Tl:function Tl(a,b,c){var _=this
-_.d=0
+_.d=1
 _.e=a
 _.r=b
 _.a=null
 _.b=c
 _.c=null},
-ajI:function ajI(a){this.a=a},
+ajI:function ajI(a,b,c){this.a=a
+this.b=b
+this.c=c},
 ajH:function ajH(a){this.a=a},
 ajF:function ajF(a){this.a=a},
 ajG:function ajG(a){this.a=a},
@@ -97163,10 +97165,12 @@ $S:1}
 A.Bp.prototype={
 ad(){return new A.Tl(new A.b7(null,t.am),A.b([],t.s),B.m)}}
 A.Tl.prototype={
-M(a,b){A.f_().$1("Spendenpage reloaded |SpendenPage| Build function work")
-return new A.iw(new A.ajI(this),null)},
-adU(a){var s=null
-return A.ad(s,A.avE(new A.ajD(this,a),this.r.length,s,!1),B.k,s,s,s,s,600,s,s,s,s,1/0)},
+M(a,b){var s
+A.f_().$1("Spendenpage reloaded |SpendenPage| Build function work")
+s=t.w
+return new A.iw(new A.ajI(this,b.S(s).f.a.a,b.S(s).f.a.b),null)},
+adU(a,b,c){var s=null
+return A.ad(s,A.avE(new A.ajD(this,a),this.r.length,s,!1),B.k,s,s,s,s,c*0.3,s,s,s,s,b)},
 adR(a){var s=this,r=null,q=s.r
 return new A.xZ(A.c1("Projekte",r,r,r,r,r,r),A.b([s.kP(q,"Lebensmittel pakete",new A.ajv(s)),s.kP(q,"Zakah",new A.ajw(s)),s.kP(q,"Kafarah/Nadr",new A.ajx(s)),s.kP(q,"Udhia",new A.ajy(s)),s.kP(q,"Zakat Al-Fitr",new A.ajz(s)),s.kP(q,"Aqiqah",new A.ajA(s)),s.kP(q,"Bekleidung",new A.ajB(s)),s.kP(q,"Medizinische Versorgung",new A.ajC(s))],t.p),!0,r)},
 kP(a,b,c){return new A.zm(b,new A.aju(a,b,c),null)},
@@ -97175,7 +97179,7 @@ return A.jf(A.aw7(A.avr(s,new A.h7(4,B.d3,B.ec),s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s,s
 vQ(a,b){return this.O7(a,b,null,null)}}
 A.ajI.prototype={
 $2(a,b){var s=this.a,r=t.p
-return new A.kE(new A.Bx(A.b([new A.u9(B.TW,A.aA_(A.ca(A.b([A.cc(A.b([s.vQ("Name",b),B.fp,s.vQ("Nachname",b)],r),B.t,B.A,B.v),B.fq,A.cc(A.b([s.vQ("email",b),B.fp,s.vQ("telefon",b)],r),B.t,B.A,B.v)],r),B.t,null,B.A,B.v,B.M),s.e)),new A.u9(B.TQ,s.adR(a)),new A.u9(B.TV,s.adU(b))],t.SV),B.Pr,s.d,new A.ajH(s),B.nZ,null),null)},
+return new A.kE(new A.Bx(A.b([new A.u9(B.TW,A.aA_(A.ca(A.b([A.cc(A.b([s.vQ("Name",b),B.fp,s.vQ("Nachname",b)],r),B.t,B.A,B.v),B.fq,A.cc(A.b([s.vQ("email",b),B.fp,s.vQ("telefon",b)],r),B.t,B.A,B.v)],r),B.t,null,B.A,B.v,B.M),s.e)),new A.u9(B.TQ,s.adR(a)),new A.u9(B.TV,s.adU(b,this.b,this.c))],t.SV),B.Pr,s.d,new A.ajH(s),B.nZ,null),null)},
 $S:165}
 A.ajH.prototype={
 $0(){var s=this.a
